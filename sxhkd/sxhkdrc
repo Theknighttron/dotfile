@@ -1,0 +1,7 @@
+# Move to the next wallpaper with Ctrl + n
+ctrl + n
+    /home/polyhistor/.config/wall/wallpaper.sh next_wallpaper
+
+# Move to the previous wallpaper with Ctrl + p
+ctrl + p
+    /home/polyhistor/.config/wall/wallpaper.sh prev_wallpaper
