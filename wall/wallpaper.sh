@@ -40,10 +40,13 @@ prev_wallpaper() {
     set_wallpaper "${wallpapers[index]}"
 }
 
+# Set the interval for changing wallpapers
+change_interval=5m
+
 # Main loop for automatic wallpaper change
 while true; do
-    # Change wallpaper every 6 minutes
-    sleep 6m
+    # Change wallpaper after the set interval
+    sleep "$change_interval"
     next_wallpaper
 done &
 
@@ -61,4 +64,3 @@ while true; do
         prev_wallpaper
     fi
 done
-
