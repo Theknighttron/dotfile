@@ -4,26 +4,24 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- packer can manage itself
     use 'wbthomason/packer.nvim'
-
     use {
-
         'nvim-telescope/telescope.nvim', tag = '0.1.6',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-
-    --- use({
-    --- 'rose-pine/neovim', as = 'rose-pine',
-    ---  vim.cmd('colorscheme rose-pine')
-    ---  })
     use('nvim-treesitter/nvim-treesitter', { run = ':tsupdate' })
     use('j-hui/fidget.nvim')
     use('theprimeagen/harpoon')
     use('tpope/vim-fugitive')
     use('mbbill/undotree')
-    use("elentok/format-on-save.nvim")
+    -- use("elentok/format-on-save.nvim")
     use("lukas-reineke/indent-blankline.nvim")
     use("terrortylor/nvim-comment")
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use { 'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
     use {
         'vonheikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -52,10 +50,4 @@ return require('packer').startup(function(use)
             ('dcampos/cmp-snippy'),
         }
     }
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
-
-    use { 'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
 end)
