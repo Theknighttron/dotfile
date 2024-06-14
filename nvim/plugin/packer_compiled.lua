@@ -79,25 +79,15 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-calc"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-calc",
-    url = "https://github.com/hrsh7th/cmp-calc"
-  },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
-  ["cmp-emoji"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-emoji",
-    url = "https://github.com/hrsh7th/cmp-emoji"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -109,46 +99,56 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
-  ["cmp-omni"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-omni",
-    url = "https://github.com/hrsh7th/cmp-omni"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
-  },
-  ["cmp-snippy"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-snippy",
-    url = "https://github.com/dcampos/cmp-snippy"
-  },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   cmp_luasnip = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["fidget.nvim"] = {
+  ["conform.nvim"] = {
     loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/fidget.nvim",
-    url = "https://github.com/j-hui/fidget.nvim"
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/nvimdev/dashboard-nvim"
+  },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
+  ["flash.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/flash.nvim",
+    url = "https://github.com/folke/flash.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   gruvbox = {
     config = { "\27LJ\2\n;\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\1K\0\1\0\fgruvbox\16colorscheme\bcmd\bvim\0" },
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
@@ -163,12 +163,17 @@ _G.packer_plugins = {
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/vonheikemen/lsp-zero.nvim"
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
-  ["lsp_signature.nvim"] = {
+  ["lspkind-nvim"] = {
     loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
-    url = "https://github.com/ray-x/lsp_signature.nvim"
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -185,6 +190,36 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.ai"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/mini.ai",
+    url = "https://github.com/echasnovski/mini.ai"
+  },
+  ["mini.pairs"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/mini.pairs",
+    url = "https://github.com/echasnovski/mini.pairs"
+  },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -200,20 +235,34 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-snippy"] = {
+  ["nvim-notify"] = {
     loaded = true,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-snippy",
-    url = "https://github.com/dcampos/nvim-snippy"
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-snippets"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-snippets",
+    url = "https://github.com/garymjr/nvim-snippets"
+  },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -221,15 +270,45 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["persistence.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/persistence.nvim",
+    url = "https://github.com/folke/persistence.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope-file-browser.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
+  ["ts-comments.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/ts-comments.nvim",
+    url = "https://github.com/folke/ts-comments.nvim"
   },
   undotree = {
     loaded = true,
@@ -240,6 +319,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-tmux-navigator"] = {
+    commands = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight", "TmuxNavigatePrevious" },
+    config = { "\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30config.vim_tmux_navigator\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/opt/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
@@ -248,6 +341,46 @@ time([[Defining packer_plugins]], false)
 time([[Config for gruvbox]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\1K\0\1\0\fgruvbox\16colorscheme\bcmd\bvim\0", "config", "gruvbox")
 time([[Config for gruvbox]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigateRight', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateRight', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigateRight ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigatePrevious', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigatePrevious', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigatePrevious ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigateLeft', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateLeft', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigateLeft ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigateDown', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateDown', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigateDown ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigateUp', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateUp', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigateUp ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
