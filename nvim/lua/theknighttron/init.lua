@@ -1,5 +1,6 @@
 require("theknighttron.remap")
 require("theknighttron.set")
+require("theknighttron.highlight")
 
 local augroup = vim.api.nvim_create_augroup
 local ThePrimeagenGroup = augroup('ThePrimeagen', {})
