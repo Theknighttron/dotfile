@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
+local package_path_str = "/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1725453128/share/lua/5.1/?/init.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?.lua;/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1725453128/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/polyhistor/.cache/nvim/packer_hererocks/2.1.1725453128/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -113,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/conform.nvim",
     url = "https://github.com/stevearc/conform.nvim"
+  },
+  ["dart-vim-plugin"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    url = "https://github.com/dart-lang/dart-vim-plugin"
   },
   ["dashboard-nvim"] = {
     loaded = true,
@@ -320,10 +325,25 @@ _G.packer_plugins = {
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-flutter"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/vim-flutter",
+    url = "https://github.com/thosakwe/vim-flutter"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-lsc"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/vim-lsc",
+    url = "https://github.com/natebosch/vim-lsc"
+  },
+  ["vim-lsc-dart"] = {
+    loaded = true,
+    path = "/home/polyhistor/.local/share/nvim/site/pack/packer/start/vim-lsc-dart",
+    url = "https://github.com/natebosch/vim-lsc-dart"
   },
   ["vim-tmux-navigator"] = {
     commands = { "TmuxNavigateLeft", "TmuxNavigateDown", "TmuxNavigateUp", "TmuxNavigateRight", "TmuxNavigatePrevious" },
@@ -349,13 +369,6 @@ time([[Config for gruvbox]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'TmuxNavigateDown', function(cmdargs)
-          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateDown', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('TmuxNavigateDown ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'TmuxNavigateUp', function(cmdargs)
           require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateUp', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -383,6 +396,13 @@ pcall(vim.api.nvim_create_user_command, 'TmuxNavigateLeft', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('TmuxNavigateLeft ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'TmuxNavigateDown', function(cmdargs)
+          require('packer.load')({'vim-tmux-navigator'}, { cmd = 'TmuxNavigateDown', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-tmux-navigator'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('TmuxNavigateDown ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

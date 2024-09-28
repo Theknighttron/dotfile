@@ -6,7 +6,7 @@ local notify = require('notify')
 notify.setup({
   opts = {
     stages = "static",
-    timeout = 5000,
+    timeout = 500000,
     max_height = function()
       return math.floor(vim.o.lines * 0.75)
     end,
